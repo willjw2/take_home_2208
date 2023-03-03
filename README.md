@@ -20,7 +20,8 @@ JSON Response Example:
                 "customer_id": 7,
                 "tea_id": 10,
                 "price": 5.99,
-                "frequency_monthly": 5
+                "frequency_monthly": 5,
+                "cancelled": true
             }
         },
         {
@@ -30,7 +31,8 @@ JSON Response Example:
                 "customer_id": 7,
                 "tea_id": 11,
                 "price": 2.5,
-                "frequency_monthly": 10
+                "frequency_monthly": 10,
+                "cancelled": false
             }
         },
         {...},
@@ -41,7 +43,7 @@ JSON Response Example:
 </details>
 
 <details close>
-<summary>Delete Subscription</summary>
+<summary>Cancel Subscription</summary>
 <br>
 
 Request: <br>
@@ -52,7 +54,7 @@ DELETE /api/v1/customer/#{customer_id}/subscriptions/#{subscription_id}
 JSON Response Example:
 ```json
 {
-    "message": "The subscription was successfully deleted"
+    "message": "The subscription was successfully cancelled"
 }
 ```
 </details>
