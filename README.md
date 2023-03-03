@@ -86,9 +86,9 @@ JSON Response Example:
           "type": "subscription",
           "attributes": {
               "customer_id": 7,
-              "tea_id": 10,
+              "tea_id": 2,
               "price": 5.99,
-              "frequency_monthly": 5
+              "frequency_monthly": 2
           }
       }
 }
