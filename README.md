@@ -88,7 +88,8 @@ JSON Response Example:
               "customer_id": 7,
               "tea_id": 2,
               "price": 5.99,
-              "frequency_monthly": 2
+              "frequency_monthly": 2,
+              "cancelled": false
           }
       }
 }
