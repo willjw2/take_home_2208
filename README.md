@@ -5,9 +5,8 @@
 <br>
 
 Request: <br>
-**GET**
 ```
-/api/v1/customer/#{customer_id}/subscriptions
+GET /api/v1/customer/#{customer_id}/subscriptions
 ```
 
 JSON Response Example:
@@ -46,9 +45,8 @@ JSON Response Example:
 <br>
 
 Request: <br>
-**DELETE**
 ```
-/api/v1/customer/#{customer_id}/subscriptions/#{subscription_id}
+DELETE /api/v1/customer/#{customer_id}/subscriptions/#{subscription_id}
 ```
 
 JSON Response Example:
@@ -64,9 +62,8 @@ JSON Response Example:
 <br>
 
 Request: <br>
-**POST**
 ```
-/api/v1/customer/#{customer_id}/subscriptions
+POST /api/v1/customer/#{customer_id}/subscriptions
 ```
 
 Request Body Example: <br>
