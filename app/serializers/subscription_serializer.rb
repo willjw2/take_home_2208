@@ -3,5 +3,6 @@ class SubscriptionSerializer
   attributes  :customer_id,
               :tea_id,
               :price,
-              :frequency_monthly
+              :frequency_monthly,
+              :cancelled
 end

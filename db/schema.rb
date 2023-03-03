@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2023_03_02_171925) do
   create_table "subscriptions", force: :cascade do |t|
     t.float "price"
     t.integer "frequency_monthly"
+    t.boolean "cancelled", default: false
     t.bigint "tea_id"
     t.bigint "customer_id"
     t.index ["customer_id"], name: "index_subscriptions_on_customer_id"

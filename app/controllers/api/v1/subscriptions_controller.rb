@@ -1,7 +1,11 @@
 class Api::V1::SubscriptionsController < ApplicationController
   def index
-    customer = Customer.find(params[:customer_id])
-    render json: SubscriptionSerializer.new(customer.subscriptions)
+    if Customer.exists?(params[:customer_id])
+      customer = Customer.find(params[:customer_id])
+      render json: SubscriptionSerializer.new(customer.subscriptions)
+    else
+      render json: {"errors": "invalid customer id"}, status: 404
+    end
   end
   def create
     subscription = Subscription.new(subscription_params)
@@ -17,8 +21,10 @@ class Api::V1::SubscriptionsController < ApplicationController
   end
   def destroy
     if Subscription.exists?(params[:id])
-      Subscription.delete(params[:id])
-      render json: {message: "The subscription was successfully deleted"}
+      # Subscription.delete(params[:id])
+      subscription = Subscription.find(params[:id])
+      subscription.update!(cancelled: true)
+      render json: {message: "The subscription was successfully cancelled"}
     else
       render json: {error: "No subscription with id #{params[:id]} exists"}, status: 404
     end

@@ -3,6 +3,7 @@ class CreateSubscription < ActiveRecord::Migration[5.2]
     create_table :subscriptions do |t|
       t.float :price
       t.integer :frequency_monthly
+      t.boolean :cancelled, default: false
       t.references :tea, foreign_key: true
       t.references :customer, foreign_key: true
     end

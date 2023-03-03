@@ -94,5 +94,4 @@ JSON Response Example:
 </details>
 
 ## Schema
-
-![Screenshot 2023-03-03 at 4 24 11 AM](https://user-images.githubusercontent.com/110333328/222696371-0de2d0c0-bf47-4327-9a19-0fa46684b478.png)
+![Screenshot 2023-03-03 at 4 55 15 AM](https://user-images.githubusercontent.com/110333328/222702800-ef8afe67-c316-49ef-ba20-39f484409b60.png)
